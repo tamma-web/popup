@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <style>
+      table {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">NO</th>
+          <th scope="col">Nama</th>
+          <th scope="col">NIM</th>
+          <th scope="col">JURUSAN</th>
+          <th scope="col">aksi</th>
+        </tr>
+      </thead>
+      <!-- row 1 -->
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>diye</td>
+          <td>01101</td>
+          <td>TI</td>
+          <!-- hapus 1-->
+          <td
+          button
+          type="button"
+          class="btn btn-success"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+          hapus
+        </button>
+        </td>
+        <!-- edit 1 -->
+            <td
+            type="button"
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            edit
+          </button>
+          </td>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>soleh</td>
+          <td>01102</td>
+          <td>SI</td>
+          <!-- hapus row 2 -->
+          <td
+            button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+            hapus
+          </button>
+          </td>
+          <!-- edit row 2 -->
+          <td type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            edit
+          </button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>ucil</td>
+          <td>01103</td>
+          <td>SI</td>
+          <!-- hapus row 3 -->
+          <td
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="hapusmodal"
+          >
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+            hapus
+          </button>
+          </td>
+          <!-- edit row 3 -->
+          <td
+            button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            edit
+          </button>
+          </td>
+        </tr>
+      </tbody>
+      <!-- tambah -->
+      <button
+        type="button"
+        class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal3"
+      >
+        tambah
+      </button>
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal edit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">nama</label>
+                    <input type="email" class="form-control" id="examplinputname" aria-describedby="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputname1" class="form-label">NIM</label>
+                    <input type="name" class="form-control" id="exampleInputname1">
+                  </div>
+                </form>
+                <p>pilih jurusan</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    TI
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    SI
+                  </label>
+                </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+      </div>
+      </div>
+  </div>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+      ></script>
+    </table>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">delete</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        apakah anda yakin ingin menghapus data tersebut??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">yakin</button>
+        <button type="button" class="btn btn-primary">batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
